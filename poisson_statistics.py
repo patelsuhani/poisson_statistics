@@ -37,6 +37,8 @@ file_paths = [r'C:\Users\patel\Code\T.1',
               r'C:\Users\patel\Code\T.2',
               r'C:\Users\patel\Code\T.3']
 
+file_path = r'C:\Users\patel\Code\counts_array.txt'
+
 # Read counts arrays from files
 counts_arrays = [read_counts_array(file_path) for file_path in file_paths]
 
@@ -52,6 +54,11 @@ sample_variance_array = m_squared_bar_array - m_bar_array**2
 # Number of intervals
 num_intervals = 100
 
+ # Save counts array to file
+save_counts_array(counts_arrays[i], file_path)
+print(f"Counts array saved to {file_path}")
+print()
+
 # Iterate through files
 for i, file_path in enumerate(file_paths, start=1):
     min_time, max_time, intervals, counts = find_min_max_intervals(file_path, num_intervals)
@@ -63,9 +70,6 @@ for i, file_path in enumerate(file_paths, start=1):
     print(intervals)
     print("Counts:")
     print(counts)
-    print("Sample Mean (m_bar):", m_bar_array[i])
-    print("Sample Mean of Squared Counts (m_squared_bar):", m_squared_bar_array[i])
-    print("Sample Variance (s^2):", sample_variance_array[i])
     print()
 
 

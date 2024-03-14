@@ -28,12 +28,14 @@ def read_counts_array(file_path):
         counts = np.loadtxt(file)
     return counts
 
+# Function to save counts array to file
+def save_counts_array(counts, file_path):
+    np.savetxt(file_path, counts)
+
 # File paths
 file_paths = [r'C:\Users\patel\Code\T.1',
               r'C:\Users\patel\Code\T.2',
               r'C:\Users\patel\Code\T.3']
-
-file_path = r'C:\Users\patel\Code\counts_data.txt'
 
 # Number of intervals
 num_intervals = 100

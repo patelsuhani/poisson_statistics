@@ -54,6 +54,14 @@ sample_variance_array = m_squared_bar_array - m_bar_array**2
 # Number of intervals
 num_intervals = 100
 
+# Print and save results
+for i, file_path in enumerate(file_paths):
+    print(f"File {i+1}: {file_path}")
+    print("Sample Mean (m_bar):", m_bar_array[i])
+    print("Sample Mean of Squared Counts (m_squared_bar):", m_squared_bar_array[i])
+    print("Sample Variance (s^2):", sample_variance_array[i])
+    print()
+
  # Save counts array to file
 save_counts_array(counts_arrays[i], file_path)
 print(f"Counts array saved to {file_path}")

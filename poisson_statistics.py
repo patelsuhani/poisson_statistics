@@ -15,7 +15,12 @@ def find_min_max_intervals(filename, num_intervals):
     # Break time into equal intervals
     intervals = np.linspace(min_time, max_time, num_intervals+1)
 
-    return min_time, max_time, intervals
+    # Compute counts for each interval
+    counts = np.zeros(num_intervals, dtype=int)
+    for i in range(num_intervals):
+        counts[i] = np.sum((data >= intervals[i]) & (data < intervals[i+1]))
+
+    return min_time, max_time, intervals, counts
 
 # File paths
 file_paths = [r'C:\Users\patel\Code\T.1',

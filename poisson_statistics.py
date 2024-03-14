@@ -63,6 +63,9 @@ for i, file_path in enumerate(file_paths, start=1):
     print(intervals)
     print("Counts:")
     print(counts)
+    print("Sample Mean (m_bar):", m_bar_array[i])
+    print("Sample Mean of Squared Counts (m_squared_bar):", m_squared_bar_array[i])
+    print("Sample Variance (s^2):", sample_variance_array[i])
     print()
 
 

@@ -51,6 +51,9 @@ m_squared_bar_array = np.mean(np.array(counts_arrays) ** 2, axis=1)
 # Compute sample variance (squared deviation from the mean) for each file
 sample_variance_array = m_squared_bar_array - m_bar_array**2
 
+# Compute the parameter E for each data set
+E_array = (sample_variance_array / m_bar_array) - 1
+
 # Number of intervals
 num_intervals = 100
 

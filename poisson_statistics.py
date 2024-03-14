@@ -17,3 +17,13 @@ def find_min_max_intervals(filename, num_intervals):
 
     return min_time, max_time, intervals
 
+# File paths
+file_paths = [r'C:\Users\patel\Code\T.1',
+              r'C:\Users\patel\Code\T.2',
+              r'C:\Users\patel\Code\T.3']
+
+# Number of intervals
+num_intervals = 100
+
+
+

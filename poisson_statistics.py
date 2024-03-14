@@ -22,10 +22,18 @@ def find_min_max_intervals(filename, num_intervals):
 
     return min_time, max_time, intervals, counts
 
+# Function to read counts array from file
+def read_counts_array(file_path):
+    with open(file_path, 'r') as file:
+        counts = np.loadtxt(file)
+    return counts
+
 # File paths
 file_paths = [r'C:\Users\patel\Code\T.1',
               r'C:\Users\patel\Code\T.2',
               r'C:\Users\patel\Code\T.3']
+
+file_path = r'C:\Users\patel\Code\counts_data.txt'
 
 # Number of intervals
 num_intervals = 100

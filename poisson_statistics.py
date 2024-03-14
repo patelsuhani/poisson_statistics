@@ -32,15 +32,15 @@ num_intervals = 100
 
 # Iterate through files
 for i, file_path in enumerate(file_paths, start=1):
-    min_time, max_time, intervals = find_min_max_intervals(file_path, num_intervals)
-
+    min_time, max_time, intervals, counts = find_min_max_intervals(file_path, num_intervals)
     print(f"File {i}:")
     print(f"Minimum Time: {min_time}")
     print(f"Maximum Time: {max_time}")
     print(f"Number of Intervals: {num_intervals}")
     print("Intervals:")
     print(intervals)
+    print("Counts:")
+    print(counts)
     print()
-
 
 

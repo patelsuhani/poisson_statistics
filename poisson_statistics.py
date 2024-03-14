@@ -37,6 +37,9 @@ file_paths = [r'C:\Users\patel\Code\T.1',
               r'C:\Users\patel\Code\T.2',
               r'C:\Users\patel\Code\T.3']
 
+# Read counts arrays from files
+counts_arrays = [read_counts_array(file_path) for file_path in file_paths]
+
 # Number of intervals
 num_intervals = 100
 

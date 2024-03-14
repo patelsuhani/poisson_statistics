@@ -40,6 +40,9 @@ file_paths = [r'C:\Users\patel\Code\T.1',
 # Read counts arrays from files
 counts_arrays = [read_counts_array(file_path) for file_path in file_paths]
 
+# Compute sample mean (m_bar) for each file
+m_bar_array = np.mean(counts_arrays, axis=1)
+
 # Number of intervals
 num_intervals = 100
 

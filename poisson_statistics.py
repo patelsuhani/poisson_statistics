@@ -46,6 +46,9 @@ m_bar_array = np.mean(counts_arrays, axis=1)
 # Compute sample mean of squared counts (m_squared_bar) for each file
 m_squared_bar_array = np.mean(counts_arrays**2, axis=1)
 
+# Compute sample mean of squared counts (m_squared_bar) for each file
+m_squared_bar_array = np.mean(counts_arrays**2, axis=1)
+
 # Number of intervals
 num_intervals = 100
 

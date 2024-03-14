@@ -25,5 +25,10 @@ file_paths = [r'C:\Users\patel\Code\T.1',
 # Number of intervals
 num_intervals = 100
 
+# Iterate through files
+for i, file_path in enumerate(file_paths, start=1):
+    min_time, max_time, intervals = find_min_max_intervals(file_path, num_intervals)
+
+
 
 
